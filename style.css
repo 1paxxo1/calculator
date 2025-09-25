@@ -1,41 +1,67 @@
-main{
-    text-align: center;
+/* Estilo general del contenedor principal (main) */
+main {
+    text-align: center; /* Centra todo el texto dentro de <main> */
 }
-#calculadora{
-    display: flex;
-    justify-content: center;
+
+/* Contenedor principal de la calculadora */
+#calculadora {
+    display: flex;              /* Usa Flexbox para organizar el contenido */
+    justify-content: center;    /* Centra el formulario horizontalmente */
 }
-#formulario{
-    width: 60%;
-    padding: 20px 40px;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    border-radius: 20;
+
+/* Estilo del formulario de la calculadora */
+#formulario {
+    width: 60%;                 /* El formulario ocupa el 60% del ancho de la pantalla */
+    padding: 20px 40px;         /* Espaciado interno (20px arriba/abajo y 40px a los lados) */
+
+    /* Sombra interna y externa para dar un efecto 3D al formulario */
+    box-shadow: 
+        rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    border-radius: 20px;        /* Bordes redondeados */
 }
-.numeros{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+
+/* Contenedor de los inputs para ingresar los números */
+.numeros {
+    display: flex;              /* Coloca los inputs en línea (uno al lado del otro) */
+    justify-content: center;    /* Los centra horizontalmente */
+    gap: 40px;                  /* Espacio de 40px entre los inputs */
 }
-#valor1, #valor2{
-width: 200px;
+
+/* Estilo específico de los inputs de número */
+#valor1, #valor2 {
+    width: 200px;               /* Ancho fijo de cada input */
 }
-#botones{
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+
+/* Contenedor de los botones de operaciones */
+#botones {
+    margin-top: 40px;           /* Espacio superior entre inputs y botones */
+    display: flex;              /* Flexbox para organizar los botones */
+    justify-content: center;    /* Centra los botones horizontalmente */
+    gap: 40px;                  /* Espacio de 40px entre cada botón */
 }
-.button{
-    width: 150px;
-    background-color: black;
-    color: ivory;
-    border-color: black;
-    border-radius: 5px;
-    padding: 10px;
+
+/* Estilo de cada botón */
+.button {
+    width: 150px;               /* Ancho fijo de cada botón */
+    background-color: black;    /* Fondo negro */
+    color: ivory;               /* Texto color marfil */
+    border-color: black;        /* Borde del mismo color que el fondo */
+    border-radius: 5px;         /* Bordes ligeramente redondeados */
+    padding: 10px;              /* Espaciado interno */
 }
-#resultado{
-    margin-top: 40px;
-    color: blue;
-    font-size: 40px;
-    text-align: center;
+
+/* Estilo del resultado */
+#resultado {
+    margin-top: 40px;           /* Espacio superior para separarlo de los botones */
+    color: blue;                /* Texto en color azul */
+    font-size: 40px;            /* Tamaño grande del texto del resultado */
+    text-align: center;         /* Centra el texto del resultado */
 }
